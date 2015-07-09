@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<div  class="hero-unit"  ALIGN=center>
+<h1>Foro Virtual</h1>
+ <div class="container">
+<div class="panel panel-success" width="50">
+<br>
+<br>
+<table class="table table-striped" >
+  <thead>
+    <tr>
+      <th></th>
+      <!-- <th>Text</th>
+      <th colspan="3"></th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %> | <%= link_to 'Ver', post %> 
+          <!--<br>
+          <p><%= post.text %><p> -->
+          
+        </td>
+
+      <!--  <td><%= post.text %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      
+      </tr>
+
+    <% end %>
+  </tbody>
+</table>
+</div>
+</div>
+<br>
+
+
+<%= link_to 'Crear Tema', new_post_path %>
+</div>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>Live Preview Bootstrap Templates</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="F2zSe39a4MBpH_FqFKrrpnMjqd1DmDm243ibbMhsfhE" />
+	<meta name="description" content="Live preview of bootstrap themes and templates">
+	<meta name="keywords" content="live view, live, view, templates	,bootstrap	,preview	,live	,theme	,responsive	,bootstrappage	,twitter	,admin	,business	,download	,marketplace	,css	,applications,according	,components	,portfolio	,features	,dashboard	,developer" />
+	<link href="http://www.bootstrappage.com/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="http://www.bootstrappage.com/assets/css/bootstrap-responsive.css" rel="stylesheet"> 
+	<link href="http://www.bootstrappage.com/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="http://www.bootstrappage.com/assets/css/preview.css" rel="stylesheet" type="text/css">
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="themes/css/font-awesome-ie7.css">
+	<![endif]-->
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Le fav and touch icons -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36859957-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<link rel="shortcut icon" href="http://www.bootstrappage.com/assets/ico/favicon.ico">
+	</head>
+<body>
+	<div id="topBar">
+		<div class="pull-left">
+			  <a style="margin-left:0" href="" target="_blank"><span class="btn btn-warning">BUY TEMPLATE </span></a>
+		</div>
+		<div class="right">
+			<a class="back" href="http://www.bootstrappage.com/"> Back to Bootstrappage</a>
+			<a id="close-button" title="bootstrappage preview" class="closeMe" href="http://www.bootstrappage.com/view/shopcart/"> Remove Frame </a>
+		</div>
+	</div>
+	<iframe id="livePreviewFrame" src="http://www.bootstrappage.com/view/shopcart/" name="livePreviewFrame" frameborder="0" noresize="noresize"> </iframe>
+    <!-- Javascript -->
+    <script src="http://www.bootstrappage.com/assets/js/jquery.js"></script>
+	<script>
+	/* Adjust the Iframe height  */
+	  var adjustFrame = function() {
+		var headerDimensions = $('#topBar').height();
+		$('#livePreviewFrame').height($(window).height() - headerDimensions);
+	  }
+	  
+	  $(document).ready(function() {
+		adjustFrame();
+		$('.closeMe').mouseover(function() {
+		  $('.closeMe').addClass('active');
+		}).mouseout(function() {
+		  $('.closeMe').removeClass('active');
+		});
+	  });
+
+	  $(window).resize(function() {
+		adjustFrame();
+	  }).load(function() {
+		adjustFrame();
+	  });
+	</script>	
+</body>
