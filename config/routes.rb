@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :registereds
   resources :posts do
     resources :comments
   end  
