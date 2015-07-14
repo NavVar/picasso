@@ -12,6 +12,9 @@ class HomeController < ApplicationController
 	def actividades
 
 	end
+	def subrubros
+
+	end
 	def objeto
 
 	end
