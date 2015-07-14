@@ -11,15 +11,21 @@
     </div>
   <% end %>
 
+<div class="panel panel-success center">
+   <div class="panel-heading">
+    <h1>Crear Foro</h1>
+    <br>
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title, "Titulo"%>
     <%= f.text_field :title %>
   </div>
+  <br>
   <div class="field">
-    <%= f.label :text %><br>
+    <%= f.label :text, "Contenido" %>
     <%= f.text_area :text %>
-  </div>
+  </div><br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Aceptar'%>
   </div>
+</div>  
 <% end %>

@@ -9,6 +9,9 @@ class HomeController < ApplicationController
 	def ferias
 
 	end
+	def actividades
+
+	end
 	def objeto
 
 	end
@@ -85,4 +88,7 @@ def prueba
 	end
 	def gastronomia
 	end	
+	def registers
+		
+	end
 end

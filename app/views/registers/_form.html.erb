@@ -1,0 +1,32 @@
+<%= form_for(@register) do |f| %>
+  <% if @register.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@register.errors.count, "error") %> prohibited this register from being saved:</h2>
+
+      <ul>
+      <% @register.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="panel panel-success center">
+
+  <div class="panel-heading">
+    <h1>Registrarse</h1><br>
+  <div class="field">
+    <%= f.label :name, "Nombre"%>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email, "Email" %>
+    <%= f.text_field :email %>
+  </div>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Aceptar' %>
+  </div>
+</div>  
+<% end %>

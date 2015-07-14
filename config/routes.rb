@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :registereds
+
+  resources :registers
   resources :posts do
     resources :comments
   end  
@@ -14,10 +15,12 @@ Rails.application.routes.draw do
   get '/prueba' => 'home#prueba'
 
   get '/posts' => 'post#index'
+  get '/registers' => 'register#index'
   get '/' => 'home#index'
 
   get '/producto' => 'home#producto'
   get '/empresas' => 'home#empresas'
+  get '/actividades' => 'home#actividades'
 
   get '/fotos1' => 'home#fotos1'
   get '/fotos2' => 'home#fotos2'
