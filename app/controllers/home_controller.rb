@@ -9,6 +9,9 @@ class HomeController < ApplicationController
 	def ferias
 
 	end
+	def actividades
+
+	end
 	def objeto
 
 	end
