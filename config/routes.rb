@@ -31,6 +31,8 @@ Rails.application.routes.draw do
 
   get '/voluntariado' => 'home#voluntariado'
   get '/fundadores' => 'home#fundadores'
+  get '/subrubros' => 'home#subrubros'
+
 
 
 
