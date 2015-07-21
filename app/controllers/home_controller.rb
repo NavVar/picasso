@@ -15,6 +15,9 @@ class HomeController < ApplicationController
 	def subrubros
 
 	end
+	def administrador
+
+	end
 	def objeto
 
 	end

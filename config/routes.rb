@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   get '/' => 'home#index'
 
   get '/producto' => 'home#producto'
+  get '/administrador' => 'home#administrador'
+
   get '/empresas' => 'home#empresas'
   get '/actividades' => 'home#actividades'
 
