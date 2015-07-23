@@ -32,6 +32,17 @@ Rails.application.routes.draw do
   get '/fotos6' => 'home#fotos6'
   get '/fotos7' => 'home#fotos7'
   get '/fotos8' => 'home#fotos8'
+  get '/fotos9' => 'home#fotos9'
+  get '/fotos10' => 'home#fotos10'
+  get '/fotos11' => 'home#fotos11'
+  get '/fotos12' => 'home#fotos12'
+  get '/fotos13' => 'home#fotos13'
+  get '/fotos14' => 'home#fotos14'
+  get '/fotos15' => 'home#fotos15'
+  get '/fotos16' => 'home#fotos16'
+  get '/fotos17' => 'home#fotos17'
+  get '/submenufotos' => 'home#submenufotos'
+
 
   get '/voluntariado' => 'home#voluntariado'
   get '/fundadores' => 'home#fundadores'

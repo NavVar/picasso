@@ -45,6 +45,36 @@ class HomeController < ApplicationController
 	def fotos8
 
 	end
+	def fotos9
+
+	end
+	def fotos10
+
+	end
+	def fotos11
+
+	end
+	def fotos12
+
+	end
+	def fotos13
+
+	end
+	def fotos14
+
+	end
+	def fotos15
+
+	end
+	def fotos16
+
+	end
+	def fotos17
+
+	end
+	def submenufotos
+
+	end
 	def nosotros
 
 	end
