@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :activities
   resources :registers
   resources :posts do
     resources :comments
