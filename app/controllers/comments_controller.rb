@@ -8,6 +8,13 @@ class CommentsController < ApplicationController
 		redirect_to @post 
 	end
 
+	def delete
+		@post=Post.find(params[:post_id]) 
+		@post.comments.destroy
+
+		redirect_to @post 
+	end
+
 	private
 		def comments_params
 			params.require(:comment).permit(:text)
