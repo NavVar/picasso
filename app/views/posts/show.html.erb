@@ -65,10 +65,11 @@
     <% @post.comments.reverse.each do |comment| %>
       <tr class="success">
         <td><%= comment.text %> 
-          
+            | <%= comment.name %>
+            | <%= comment.email %>
           
         </td>
-
+        <td><a href="/comments/destroy/<%= comment.id %>" class="btn btn-danger">Eliminar</a></td>
       
       
       </tr>
@@ -100,6 +101,14 @@
   
 
    <textarea name="comment[text]" id="comment_text" rows="5" cols="60"></textarea>
+  <div class="field">
+    <%= f.label :name, "Nombre"%>
+    <%= f.text_field :name %>
+   </div>
+   <div class="field">
+    <%= f.label :email, "Correo"%>
+    <%= f.text_field :email %>
+   </div>
    <div class="actions" >
   
      <%= f.submit "Comentar" %>

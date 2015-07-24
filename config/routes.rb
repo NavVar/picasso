@@ -68,6 +68,9 @@ Rails.application.routes.draw do
 
   get '/gastronomia' => 'home#gastronomia' 
 
+
+  get '/comments/destroy/:id' => 'comments#destroy'
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

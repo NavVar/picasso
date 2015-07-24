@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+	before_action :set_comment, only: [:destroy]
 	skip_before_filter :verify_autenticity_token
 
 	def create
@@ -8,16 +9,26 @@ class CommentsController < ApplicationController
 		redirect_to @post 
 	end
 
-	def delete
-		@post=Post.find(params[:post_id]) 
-		@post.comments.destroy
+	def destroy
+		# @comment=Comment.find(params[:comment_id]) 
+		# @post.comments.destroy
 
-		redirect_to @post 
+		# redirect_to @post 
+
+		@comment.destroy
+		respond_to do |format|
+	      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+	      format.json { head :no_content }
+	    end
 	end
 
 	private
+		def set_comment
+	      @comment = Comment.find(params[:id])
+	    end
+
 		def comments_params
-			params.require(:comment).permit(:text)
+			params.require(:comment).permit(:text, :name, :email)
 		end
 	
 
