@@ -1,0 +1,38 @@
+
+
+
+
+<div class="container">
+
+
+
+<table class="table">
+  <thead>
+    <tr class="success">
+      <th>Voluntarios</th>
+      
+    
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @volunteers.each do |volunteer| %>
+      <tr class="info">
+       <td>Nombre: <%= volunteer.name %> <br>
+        Ocupación: <%= volunteer.ocupation %><br>
+      Experiencia: <%= volunteer.experience %></td>
+        
+       
+      </tr>
+      <tr class="success">
+      <th></th>     
+    
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+</div>
+
+
