@@ -1,0 +1,106 @@
+
+
+<div class="container">
+
+
+
+<table class="table">
+  <thead>
+    <tr class="success">
+       <th>VOLUNTARIO POSTULANTE</th>
+     
+    
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr class="success">
+      <th> <strong>Apellidos:</strong>
+  <%= @newvolunteer.lasname %>
+</th>         
+    
+    </tr>
+    <tr class="info">
+      <th><strong>Nombres:</strong>
+  <%= @newvolunteer.name %></th>         
+    
+    </tr>
+    <tr class="success">
+      <th> <strong>Fecha de Nacimiento:</strong>
+  <%= @newvolunteer.birthdate %>
+</th>         
+    
+    </tr>
+    <tr class="info">
+      <th><strong>Ci:</strong>
+  <%= @newvolunteer.ci %></th>         
+    
+    </tr>
+    <tr class="success">
+      <th> <strong>Dirección:</strong>
+  <%= @newvolunteer.address %>
+</th>         
+    
+    </tr>
+    <tr class="info">
+      <th><strong>Ciudad:</strong>
+  <%= @newvolunteer.city %></th>         
+    
+    </tr>
+    <tr class="success">
+      <th>  <strong>Teléfono:</strong>
+  <%= @newvolunteer.phone %>
+</th>         
+    
+    </tr>
+    <tr class="info">
+      <th> <strong>Celular:</strong>
+  <%= @newvolunteer.cell %></th>         
+    
+    </tr>
+    <tr class="success">
+      <th> <strong>Email:</strong>
+  <%= @newvolunteer.mail %>
+</th>         
+    
+    </tr>
+    <tr class="info">
+      <th> <strong>Ocupación:</strong>
+  <%= @newvolunteer.ocupation %></th>         
+    
+    </tr>
+    <tr class="success">
+      <th> <strong>Email:</strong>
+  <%= @newvolunteer.mail %>
+</th>         
+    
+    </tr>
+    <tr class="info">
+      <th><strong>Tiempo libre:</strong>
+  <%= @newvolunteer.free %></th>         
+    
+    </tr> <tr class="success">
+      <th><strong>Razón de voluntariado:</strong>
+  <%= @newvolunteer.reason %>
+</th>         
+    
+    </tr>
+    <tr class="info">
+      <th> <strong>Area:</strong>
+  <%= @newvolunteer.area %></th>         
+    
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<div class=""><strong><%= link_to 'Atras', newvolunteers_path %></strong></div>
+
+</div>
+
+
+
+
+
+

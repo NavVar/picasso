@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NewVolunteerTest < ActiveSupport::TestCase
+class NewvolunteerTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

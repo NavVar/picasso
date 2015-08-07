@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
-  resources :new_volunteers
+  
+  resources :newvolunteers
   resources :volunteers
+ 
   resources :activities
   resources :registers
   resources :posts do

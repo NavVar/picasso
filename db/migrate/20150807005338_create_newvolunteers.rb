@@ -1,6 +1,6 @@
-class CreateNewVolunteers < ActiveRecord::Migration
+class CreateNewvolunteers < ActiveRecord::Migration
   def change
-    create_table :new_volunteers do |t|
+    create_table :newvolunteers do |t|
       t.string :lasname
       t.string :name
       t.string :birthdate

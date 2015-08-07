@@ -1,0 +1,45 @@
+
+
+<div class="container">
+
+
+
+<table class="table">
+  <thead>
+    <tr class="success">
+       <th>Apellidos</th>
+      <th>Nombres</th>
+   
+      <th colspan="2"></th>
+    
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @newvolunteers.each do |newvolunteer| %>
+      <tr>
+        <td><%= newvolunteer.lasname %></td>
+        <td><%= newvolunteer.name %></td>
+        
+        <td><%= link_to 'Mostrar', newvolunteer %></td>
+        
+        <td><%= link_to 'Borrar', newvolunteer, method: :delete, data: { confirm: 'Seguro?' } %></td>
+      </tr>
+    <% end %>
+      </tr>
+      <tr class="success">
+      <th></th>  
+      <th></th>  
+      <th></th>  
+      <th></th>     
+    
+    </tr>
+   
+  </tbody>
+</table>
+
+<br>
+</div>
+
+
+
