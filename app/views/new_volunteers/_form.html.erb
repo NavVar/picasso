@@ -1,0 +1,69 @@
+<%= form_for(@new_volunteer) do |f| %>
+  <% if @new_volunteer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@new_volunteer.errors.count, "error") %> prohibited this new_volunteer from being saved:</h2>
+
+      <ul>
+      <% @new_volunteer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lasname %><br>
+    <%= f.text_field :lasname %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate %><br>
+    <%= f.text_field :birthdate %>
+  </div>
+  <div class="field">
+    <%= f.label :ci %><br>
+    <%= f.text_field :ci %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :cell %><br>
+    <%= f.text_field :cell %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %><br>
+    <%= f.text_field :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :ocupation %><br>
+    <%= f.text_field :ocupation %>
+  </div>
+  <div class="field">
+    <%= f.label :free %><br>
+    <%= f.text_area :free %>
+  </div>
+  <div class="field">
+    <%= f.label :reason %><br>
+    <%= f.text_area :reason %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

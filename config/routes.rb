@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :new_volunteers
   resources :volunteers
   resources :activities
   resources :registers
