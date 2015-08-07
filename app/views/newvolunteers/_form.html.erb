@@ -1,69 +1,162 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+<h1>ANOTA TUS DATOS</h1>
+<br>
+
+<table class="table">
+
+
 <%= form_for(@newvolunteer) do |f| %>
-  <% if @newvolunteer.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@newvolunteer.errors.count, "error") %> prohibited this newvolunteer from being saved:</h2>
+  
+<tr class="info">
+  <th>
+ 
 
-      <ul>
-      <% @newvolunteer.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :lasname %><br>
+    Apellidos<br>
     <%= f.text_field :lasname %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+
+    Nombres<br>
     <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :birthdate %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+
+    Fecha de Nacimineto<br>
     <%= f.text_field :birthdate %>
-  </div>
-  <div class="field">
-    <%= f.label :ci %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+
+    Carnet de Identidad<br>
     <%= f.text_field :ci %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+
+    Dirección<br>
     <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br>
+ 
+  </th>
+  </tr>
+   <tr class="info">
+  <th>
+ 
+
+    Ciudad<br>
     <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br>
+ 
+  </th>
+  </tr>
+ <tr class="info">
+  <th>
+ 
+
+    Teléfono<br>
     <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :cell %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+
+    Celular<br>
     <%= f.text_field :cell %>
-  </div>
-  <div class="field">
-    <%= f.label :mail %><br>
+ 
+  </th>
+  </tr>
+<tr class="info">
+  <th>
+ 
+
+    Email<br>
     <%= f.text_field :mail %>
-  </div>
-  <div class="field">
-    <%= f.label :ocupation %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+
+    Ocupación<br>
     <%= f.text_field :ocupation %>
-  </div>
-  <div class="field">
-    <%= f.label :free %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+
+    Días y hoarios disponibles<br>
     <%= f.text_area :free %>
-  </div>
-  <div class="field">
-    <%= f.label :reason %><br>
+ 
+  </th>
+  </tr>
+  <tr class="info">
+  <th>
+ 
+Razón por la que desea ser voluntario<br>
     <%= f.text_area :reason %>
-  </div>
-  <div class="field">
-    <%= f.label :area %><br>
+ 
+  </th>
+  </tr>
+ <tr class="info">
+  <th>
+ 
+Área en la que desea realizar el voluntariado<br>
     <%= f.text_field :area %>
-  </div>
+ 
+  </th>
+  </tr>
+<tr class="info">
+  <th>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Aceptar'%>
   </div>
+  </th>
+  </tr>
+  
+ 
+ 
+ 
 <% end %>
+</table>
+
+
+
+</div>
