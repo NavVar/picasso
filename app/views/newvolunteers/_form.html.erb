@@ -138,8 +138,7 @@ Razón por la que desea ser voluntario<br>
   <th>
  
 Área en la que desea realizar el voluntariado<br>
-    <%= f.text_field :area %>
- 
+    <%= f.select :area, options_for_select([["comunicación", "comunicacion"], ["eventos", "eventos"], ["informática", "informatica"], ["linguistica", "linguistica"], ["otros", "otros"]], @newvolunteer.area) %>
   </th>
   </tr>
 <tr class="info">
