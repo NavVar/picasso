@@ -31,24 +31,6 @@ ActiveRecord::Schema.define(version: 20150807005338) do
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
 
-  create_table "new_volunteers", force: :cascade do |t|
-    t.string   "lasname"
-    t.string   "name"
-    t.string   "birthdate"
-    t.string   "ci"
-    t.string   "address"
-    t.string   "city"
-    t.string   "phone"
-    t.string   "cell"
-    t.string   "mail"
-    t.string   "ocupation"
-    t.text     "free"
-    t.text     "reason"
-    t.string   "area"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "newvolunteers", force: :cascade do |t|
     t.string   "lasname"
     t.string   "name"
