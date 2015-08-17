@@ -17,7 +17,7 @@ class CommentsController < ApplicationController
 
 		@comment.destroy
 		respond_to do |format|
-	      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+	      format.html { redirect_to "/index1", notice: 'Comentario eliminado.' }
 	      format.json { head :no_content }
 	    end
 	end

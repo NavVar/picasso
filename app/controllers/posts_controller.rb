@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :show1, :edit, :update, :destroy]
 
   # GET /posts
   # GET /posts.json
@@ -7,9 +7,16 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def index1
+    @posts = Post.all
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show
+  end
+
+  def show1
   end
 
   # GET /posts/new

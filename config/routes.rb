@@ -75,6 +75,9 @@ Rails.application.routes.draw do
 
   get '/comments/destroy/:id' => 'comments#destroy'
 
+    get '/index1' => 'posts#index1'
+    get '/posts/show1/:id' => 'posts#show1'
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
